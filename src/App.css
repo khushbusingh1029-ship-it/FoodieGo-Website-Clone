@@ -13,8 +13,12 @@ font-family: sans-serif;
 
 /* navbar  */
 
-.navbar {
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 display: flex;
 
 justify-content: space-between;
@@ -184,7 +188,11 @@ cursor: pointer;
 font-size: 16px;
 
 }
-
+.first button a{
+  
+  text-decoration: none;
+  color: white;
+}
 /* Users Recipes Downloads Row */
 
 .inside {
@@ -509,4 +517,104 @@ border: none;
 
 border-radius: 5px;
 
+}
+
+/* contact  */
+
+.contact{
+  width: 70vw;
+  margin: auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 50px;
+margin-top: 100px;
+}
+
+.contact h2{
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.contact p{
+  font-size: 18px;
+  color: #555;
+  line-height: 28px;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #615b5b;
+  border-radius: 8px;
+  padding: 40px;
+}
+.contact input, .contact textarea{
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #b1aeae;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.contact button{
+  padding: 14px 25px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact button:hover{
+  background-color: #3957eb;
+}
+.contact textarea{
+  height: 150px;
+}
+
+.footer {
+  background: #202a41;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-brand h2 {
+  color: #ff6b00;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6b00;
+}
+
+.footer-social p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  font-size: 14px;
 }
